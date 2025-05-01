@@ -18,7 +18,6 @@ pip install mkdocs-material
 
 You can then run a local version of the Wiki:
 ```bash
-cd wiki/
 mkdocs serve
 ```
 
