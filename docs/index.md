@@ -51,24 +51,24 @@ The best example of how to use Thermoo is provided by the mods [Frostiful](https
 
 These are the current Minecraft versions being supported by Thermoo.
 
-| Minecraft Version | Support Status         |
-|-------------------|------------------------|
-| 1.21.5            | ✅ Supported            | 
-| 1.21.4            | ⚠️ Critical fixes only | 
-| 1.21.3            | ❌ Unsupported          | 
-| 1.21.1            | ✅ Supported            | 
-| 1.20.6            | ❌ Unsupported          | 
-| 1.20.4            | ❌ Unsupported          | 
-| 1.20.2            | ❌ Unsupported          | 
-| 1.20.1            | ❌ Unsupported          |
-| 1.19.4            | ❌ Unsupported          |
-| 1.19.2            | ❌ Unsupported          | 
+| Minecraft Version | Support Status                |
+| ----------------- | ----------------------------- |
+| 1.21.5            | :white_check_mark: Supported  |
+| 1.21.4            | :warning: Critical fixes only |
+| 1.21.3            | :x: Unsupported               |
+| 1.21.1            | :white_check_mark: Supported  |
+| 1.20.6            | :x: Unsupported               |
+| 1.20.4            | :x: Unsupported               |
+| 1.20.2            | :x: Unsupported               |
+| 1.20.1            | :x: Unsupported               |
+| 1.19.4            | :x: Unsupported               |
+| 1.19.2            | :x: Unsupported               |
 
 Status Definitions:
 
-* ✅ Supported: This version is fully supported and will receive all new features, fixes, and updates (where possible)
-* ⚠️ Critical fixes only: This version will receive only critical crash and security fixes, as well as minor features where they can be easily cherry-picked
-* ❌ Unsupported: This version will receive no future updates, except for critical security fixes
+* :white_check_mark: Supported: This version is fully supported and will receive all new features, fixes, and updates (where possible)
+* :warning: Critical fixes only: This version will receive only critical crash and security fixes, as well as minor features where they can be easily cherry-picked
+* :x: Unsupported: This version will receive no future updates, except for critical security fixes
 
 ## Requires Thermoo Badge
 
