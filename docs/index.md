@@ -47,8 +47,35 @@ For Modders, there is also extensive Javadoc provided for all of Thermoo's publi
 
 The best example of how to use Thermoo is provided by the mods [Frostiful](https://github.com/TheDeathlyCow/frostiful/) and [Scorchful](https://github.com/TheDeathlyCow/scorchful/), as they are made by me! They include examples on how to apply temperature, how to listen to temperature-related events, how to use the datapack integrations, and how to display temperature to the player. However, if you have any questions feel free to ask on my [Discord](https://discord.gg/aqASuWebRU)
 
+## LTS Policy
+
+These are the current Minecraft versions being supported by Thermoo.
+
+| Minecraft Version | Support Status         |
+|-------------------|------------------------|
+| 1.21.5            | ✅ Supported            | 
+| 1.21.4            | ⚠️ Critical fixes only | 
+| 1.21.3            | ❌ Unsupported          | 
+| 1.21.1            | ✅ Supported            | 
+| 1.20.6            | ❌ Unsupported          | 
+| 1.20.4            | ❌ Unsupported          | 
+| 1.20.2            | ❌ Unsupported          | 
+| 1.20.1            | ❌ Unsupported          |
+| 1.19.4            | ❌ Unsupported          |
+| 1.19.2            | ❌ Unsupported          | 
+
+Status Definitions:
+
+* ✅ Supported: This version is fully supported and will receive all new features, fixes, and updates (where possible)
+* ⚠️ Critical fixes only: This version will receive only critical crash and security fixes, as well as minor features where they can be easily cherry-picked
+* ❌ Unsupported: This version will receive no future updates, except for critical security fixes
+
 ## Requires Thermoo Badge
 
 Feel free to add this to your mod page if you use Thermoo: `https://i.imgur.com/MjlOmH0.png`
 
 ![Requires Thermoo Badge](https://i.imgur.com/MjlOmH0.png)
+
+## Wiki Source
+
+The source code for this wiki may be found at https://github.com/theDeathlyCow/thermoo-docs, contributions are welcome!
