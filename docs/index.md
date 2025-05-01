@@ -78,4 +78,4 @@ Feel free to add this to your mod page if you use Thermoo: `https://i.imgur.com/
 
 ## Wiki Source
 
-The source code for this wiki may be found at https://github.com/theDeathlyCow/thermoo-docs, contributions are welcome!
+The source code for this wiki may be found at [https://github.com/theDeathlyCow/thermoo-docs](https://github.com/theDeathlyCow/thermoo-docs), contributions are welcome!
