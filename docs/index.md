@@ -54,13 +54,12 @@ These are the current Minecraft versions being supported by Thermoo.
 | Minecraft Version | Support Status                |
 | ----------------- | ----------------------------- |
 | 1.21.5            | :white_check_mark: Supported  |
-| 1.21.4            | :warning: Critical fixes only |
-| 1.21.3            | :x: Unsupported               |
+| 1.21.2-4          | :warning: Critical fixes only |
 | 1.21.1            | :white_check_mark: Supported  |
-| 1.20.6            | :x: Unsupported               |
-| 1.20.4            | :x: Unsupported               |
+| 1.20.5-6          | :x: Skipped                   |
+| 1.20.3-4          | :x: Unsupported               |
 | 1.20.2            | :x: Unsupported               |
-| 1.20.1            | :x: Unsupported               |
+| 1.20-1.20.1       | :x: Unsupported               |
 | 1.19.4            | :x: Unsupported               |
 | 1.19.2            | :x: Unsupported               |
 
