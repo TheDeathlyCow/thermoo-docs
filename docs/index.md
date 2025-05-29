@@ -49,12 +49,16 @@ The best example of how to use Thermoo is provided by the mods [Frostiful](https
 
 ## LTS Policy
 
-These are the current Minecraft versions being supported by Thermoo.
+This is the current support status for each version of Minecraft that Thermoo is available for. The current Long-Term Support (LTS) policy for Thermoo versions is to support 1.21.1 and the latest game drop. Version 1.21.1 will be supported until at least the release of the Vibrant Visuals update for Java Edition.
+
+Supported versions will receive all new features, fixes, and updates (where possible).
+
+Unsupported versions version will receive no future updates, except for critical security fixes.
 
 | Minecraft Version | Support Status                |
 | ----------------- | ----------------------------- |
 | 1.21.5            | :white_check_mark: Supported  |
-| 1.21.2-4          | :warning: Critical fixes only |
+| 1.21.2-4          | :x: Unsupported               |
 | 1.21.1            | :white_check_mark: Supported  |
 | 1.20.5-6          | :x: Skipped                   |
 | 1.20.3-4          | :x: Unsupported               |
@@ -62,12 +66,6 @@ These are the current Minecraft versions being supported by Thermoo.
 | 1.20-1.20.1       | :x: Unsupported               |
 | 1.19.4            | :x: Unsupported               |
 | 1.19.2            | :x: Unsupported               |
-
-Status Definitions:
-
-* :white_check_mark: Supported: This version is fully supported and will receive all new features, fixes, and updates (where possible)
-* :warning: Critical fixes only: This version will receive only critical crash and security fixes, as well as minor features where they can be easily cherry-picked
-* :x: Unsupported: This version will receive no future updates, except for critical security fixes
 
 ## Requires Thermoo Badge
 
