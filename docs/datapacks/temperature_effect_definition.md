@@ -8,6 +8,9 @@ Temperature effects are a data-driven way of adding effects to temperature under
 !!! info
     For 1.20.4 and below: the path of temperature effects was `thermoo/temperature_effects` in these versions, but it has since been updated to a singular form to reflect similar changes made to the vanilla game.
 
+!!! tip
+    You can generate Temperature Effect definitions using Misode's Datapack Generator at: [https://misode.github.io/thermoo/temperature_effect/](https://misode.github.io/thermoo/temperature_effect/)
+
 ## JSON format
 
 Temperature effects come in the following JSON format:

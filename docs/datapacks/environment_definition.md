@@ -8,6 +8,9 @@ The Environment Definition is a datapack registry that defines the environment p
 
 For mods, you should place your files in `src/main/resources/data/[modid]/thermoo/environment/` and for datapacks, they should instead be placed in `[world]/datapacks/your_datapack/data/[namespace]/thermoo/environment/`.
 
+!!! tip
+    You can generate Environment definitions using Misode's Datapack Generator at: [https://misode.github.io/thermoo/environment/](https://misode.github.io/thermoo/environment/)
+
 ## Format
 
 - `{}`: The root tag.

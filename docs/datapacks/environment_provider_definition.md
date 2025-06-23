@@ -10,6 +10,10 @@ For mods, you should place your files in `src/main/resources/data/[modid]/thermo
 
 Environment Providers work as a tree-like structure that has two categories of types: branching types that choose a child provider based on some world condition, and leaf types that can provide the environment components directly, or modify the current set in the evaluation tree.
 
+!!! tip
+    You can generate Environment Provider definitions using Misode's Datapack Generator at: [https://misode.github.io/thermoo/environment_provider/](https://misode.github.io/thermoo/environment_provider/)
+
+
 ## Environment Provider Formats
 
 - `{}`: The root tag.
@@ -18,14 +22,19 @@ Environment Providers work as a tree-like structure that has two categories of t
 
 Environment Provider Types:
 
-- [`thermoo:constant`](#constant)
-- [`thermoo:seasonal/temperate`](#temperate-seasonal)
-- [`thermoo:seasonal/tropical`](#tropical-seasonal)
-- [`thermoo:light_threshold`](#light-threshold)
-- [`thermoo:weather_state`](#weather-state)
-- [`thermoo:precipitation_type`](#precipitation-type)
-- [`thermoo:temperature_shift`](#temperature-shift)
-- [`thermoo:modify`](#modify)
+- [Environment Provider Definition](#environment-provider-definition)
+  - [Environment Provider Formats](#environment-provider-formats)
+    - [Constant](#constant)
+    - [Temperate Seasonal](#temperate-seasonal)
+    - [Tropical Seasonal](#tropical-seasonal)
+    - [Light Threshold](#light-threshold)
+    - [Weather State](#weather-state)
+    - [Precipitation Type](#precipitation-type)
+    - [Temperature Shift](#temperature-shift)
+    - [Modify](#modify)
+  - [Examples](#examples)
+  - [Custom Environment Provider Types](#custom-environment-provider-types)
+    - [Example](#example)
 
 Just to be clear on how **type** delegation works, here is a complete example of an environment provider using the `thermoo:constant` type.
 
