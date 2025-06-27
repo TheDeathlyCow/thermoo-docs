@@ -1,0 +1,20 @@
+{
+    "patches": [
+        {
+            "minecraft_version": ">=1.21 <=1.21.1",
+            "mods": [
+                "libhud",
+                "armorpointspp",
+                "colorfulhearts",
+                "overflowingbars",
+                "immersive_weathering",
+                "seasons",
+                "sereneseasons",
+                "origins",
+                "simple-seasons",
+                "friendsandfoes",
+                "stellaris"
+            ]
+        }
+    ]
+}
