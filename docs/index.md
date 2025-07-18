@@ -57,7 +57,7 @@ Unsupported versions version will receive no future updates, except for critical
 
 | Minecraft Version | Support Status                |
 | ----------------- | ----------------------------- |
-| 1.21.6-7          | :white_check_mark: Supported  |
+| 1.21.6-8          | :white_check_mark: Supported  |
 | 1.21.5            | :x: Unsupported               |
 | 1.21.2-4          | :x: Unsupported               |
 | 1.21.1            | :white_check_mark: Supported  |
