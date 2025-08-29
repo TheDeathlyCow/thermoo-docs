@@ -5,6 +5,8 @@ title: "🏠 Homepage"
 
 Welcome to the Thermoo Developer wiki! Thermoo is a temperature and environment library mod for Minecraft, targeting the Fabric and Quilt ecosystems. It is meant to help provide compatibility between mods and datapacks that use temperature as a core mechanic, such as Frostiful or Scorchful. Using this mod on its own will have no gameplay or visual effects. It is designed to be used by Mods written in both Java and Kotlin, as well as Datapacks through Commands and other registries.
 
+Normally, Thermoo is required on both client and server. However, Thermoo may be made compatible with vanilla clients on dedicated servers with [Polymer](https://modrinth.com/mod/polymer) installed. So if you want to use Thermoo to make fully server sided custom datapacks, then make sure to install Polymer!
+
 ## 🎮 For Players
 
 Thermoo is a library mod, and as such by itself should not have any gameplay effects. For mods that use Thermoo see [Frostiful](https://www.modrinth.com/mod/frostiful) and [Scorchful](https://www.modrinth.com/mod/scorchful).
