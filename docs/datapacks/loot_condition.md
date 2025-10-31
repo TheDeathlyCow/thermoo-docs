@@ -3,7 +3,7 @@ title: ❔ Loot Conditions
 ---
 # Loot Conditions
 
-Thermoo defines some custom types of [loot conditions](https://minecraft.wiki/w/Predicate) (also known as predicates). There is one for temperature, and one for wet ticks.
+Thermoo defines some custom types of [loot item conditions](https://minecraft.wiki/w/Predicate) (also known as predicates). There is one for temperature, and one for wet ticks.
 
 !!! tip
     You can generate Predicate definitions using Misode's Datapack Generator at: [https://misode.github.io/thermoo/predicate/](https://misode.github.io/thermoo/predicate/)

@@ -13,15 +13,15 @@ Increase max health of all Helmets when worn in the Head Slot.
     ```java
     static void initialize() {
         ModifyItemAttributeModifiersCallback.EVENT.register((stack, builder) -> {
-            if (stack.isIn(ItemTags.HEAD_ARMOR)) {
+            if (stack.is(ItemTags.HEAD_ARMOR)) {
                 builder.add(
-                        EntityAttributes.MAX_HEALTH,
-                        new EntityAttributeModifier(
-                                Identifier.of("example", "helmet_max_hp"),
+                        Attributes.MAX_HEALTH,
+                        new AttributeModifier(
+                                ResourceLocation.fromNamespaceAndPath("example", "helmet_max_hp"),
                                 4.0,
-                                EntityAttributeModifier.Operation.ADD_VALUE
+                                AttributeModifier.Operation.ADD_VALUE
                         ),
-                        AttributeModifierSlot.HEAD
+                        EquipmentSlotGroup.HEAD
                 );
             }
         });
@@ -31,15 +31,15 @@ Increase max health of all Helmets when worn in the Head Slot.
     ```kotlin
     fun initialize() {
         ModifyItemAttributeModifiersCallback.EVENT.register { stack, builder ->
-            if (stack.isIn(ItemTags.HEAD_ARMOR)) {
+            if (stack.is(ItemTags.HEAD_ARMOR)) {
                 builder.add(
-                        EntityAttributes.MAX_HEALTH,
-                        EntityAttributeModifier(
-                                Identifier.of("example", "helmet_max_hp"),
+                        Attributes.MAX_HEALTH,
+                        AttributeModifier(
+                                ResourceLocation.fromNamespaceAndPath("example", "helmet_max_hp"),
                                 4.0,
-                                EntityAttributeModifier.Operation.ADD_VALUE
+                                AttributeModifier.Operation.ADD_VALUE
                         ),
-                        AttributeModifierSlot.HEAD
+                        EquipmentSlotGroup.HEAD
                 )
             }
         }

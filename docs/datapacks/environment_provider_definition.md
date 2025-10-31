@@ -94,7 +94,7 @@ A branch provider that chooses a child provider if the [light level](https://min
 
 - `{}`: The root tag.
     - `"` **type**: Must be `thermoo:light_threshold`.
-    - `"` **light_type**: Optional string. One of `block` or `sky`. Applies a filter to the type of light used for calculating the threshold value. If not specified, then the light level will be the combined light level of `max(block_light, internal_sky_light)`.
+    - `"` **light_type**: Optional string. One of `block` or `sky`. Applies a filter to the layer of light used for calculating the threshold value. If not specified, then the light level will be the combined light level of `max(block_light, internal_sky_light)`.
     - `T/F` **apply_ambient_darkness**: Optional boolean. If the **light_type** is `sky`, then will subtract off an "ambient darkness" value from the raw skylight value at the queried world position. This is a value used by the game to determine the final "internal" skylight level when its night or stormy. No effect if **light_type** is not `sky`. Defaults to `true`.
     - `I` **threshold**: Integer, the threshold light level used to choose the provider to use after the above filters to use. Must be in the range `[0, 15]`.
     - `"` `{}` **above**: The Environment Provider ID or in-line Environment Provider to use when the light level at the queried world position is _at or above_ the **threshold** value.

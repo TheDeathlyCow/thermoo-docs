@@ -45,14 +45,14 @@ A dew point component type.
         public static final DewPointComponent DEFAULT = new DewPointComponent(new TemperatureRecord(20));
     
         // usually this would go in its own EnvironmentComponentTypes-like class, but kept here as an example
-        public static final ComponentType<DewPointComponent> COMPONENT = ComponentType.builder()
-                .codec(CODEC)
+        public static final DataComponentType<DewPointComponent> COMPONENT = DataComponentType.builder()
+                .persistent(CODEC)
                 .build();
         
         public static void initialize() {
             Registry.register(
                     ThermooRegistries.ENVIRONMENT_COMPONENT_TYPE,
-                    Identifier.of("example", "dew_point"),
+                    ResourceLocation.fromNamespaceAndPath("example", "dew_point"),
                     COMPONENT
             );
         }
@@ -75,14 +75,14 @@ A dew point component type.
             val DEFAULT: DewPointComponent = DewPointComponent(20.C)
             
             // usually this would go in its own EnvironmentComponentTypes-like class, but kept here as an example
-            val COMPONENT: ComponentType<DewPointComponent> = ComponentType.builder()
-                    .codec(CODEC)
+            val COMPONENT: DataComponentType<DewPointComponent> = DataComponentType.builder()
+                    .persistent(CODEC)
                     .build()
             
             fun initialize() {
                 Register.register(
                     ThermooRegistries.ENVIRONMENT_COMPONENT_TYPE,
-                    Identifier.of("example", "dew_point"),
+                    ResourceLocation.fromNamespaceAndPath("example", "dew_point"),
                     COMPONENT
                 )
             }

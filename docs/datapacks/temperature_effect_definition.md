@@ -38,18 +38,18 @@ If the `type` is `thermoo:empty`, the `config` can be left as an empty object. N
 
 ---
 
-### Status Effect
+### Mob Effect
 
-The status effect temperature effect applies the specified status effect(s) (aka potion effects) to the affected entity when they match the predicate
+The mob effect temperature effect applies the specified mob effect(s) (aka status effects or potion effects) to the affected entity when they match the predicate.
 
 #### Config JSON format
-If the type is `thermoo:status_effect`, the `config` has the following format:
+If the type is `thermoo:mob_effect` or `thermoo:status_effect`, the `config` has the following format:
 
 * `[]` **effects**: A list of effects, whose entries have the following format:
     - `{}`: The root tag.
-        - `"` **type**: A resource location/identifier of the status effect type. For example, `minecraft:speed`.
-        - `I` **duration**: Integer. The time (in ticks) the status effect will be applied for. Optional: defaults to 20 if not specified.
-        - `I` **amplifier**: Integer. The amplifier of the status effect.
+        - `"` **type**: A resource location/identifier of the mob effect type. For example, `minecraft:speed`.
+        - `I` **duration**: Integer. The time (in ticks) the mob effect will be applied for. Optional: defaults to 20 if not specified.
+        - `I` **amplifier**: Integer. The amplifier of the mob effect.
 
 ---
 

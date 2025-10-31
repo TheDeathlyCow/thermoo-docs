@@ -3,6 +3,9 @@ title: 📖 API Overview
 ---
 # API Overview
 
+!!! info
+    This website primarily uses the Official Mappings (aka MojMap) for its code-based examples. Thermoo was originally written with Yarn mappings in mind, but migrated to Official Mappings soon after it was announced that Minecraft would no longer publish obfuscated JARs. Feel free to raise an issue [here](https://github.com/theDeathlyCow/thermoo-docs/issues) if there are any examples not working due to mixed mappings.
+
 Thermoo is a temperature and environment library for the Fabric and Quilt modding platforms. This page will provide a basic overview of how to set up and interact with the library in your mod or datapack. As of 1.21, Thermoo is required to be installed on both the client and server in order to function properly.
 
 This is a rather long page, so it may be best to follow along in your own mod/datapack while reading, or to skim the page first. There is also a sidebar to help with navigation! Remember that I also have a [Discord](https://discord.gg/aqASuWebRU) where I am happy to help and answer questions related to Thermoo.
@@ -202,7 +205,7 @@ Remove 10 temperature per tick when in powder snow, passively applying Frost Res
     ```java
     void tick(LivingEntity entity) {
         // yes this is a field
-        if (entity.inPowderSnow || entity.wasInPowderSnow) {
+        if (entity.isInPowderSnow || entity.wasInPowderSnow) {
             entity.thermoo$addTemperature(-10, HeatModes.PASSIVE);
         }
     }
@@ -213,7 +216,7 @@ Remove 10 temperature per tick when in powder snow, passively applying Frost Res
     
     fun tick(entity: LivingEntity) {
         // yes this is a field
-        if (entity.inPowderSnow || entity.wasInPowderSnow) {
+        if (entity.isInPowderSnow || entity.wasInPowderSnow) {
             entity.addTemperature(-10, mode = HeatModes.PASSIVE)
         }
     }
@@ -300,9 +303,9 @@ the [Temperature Effect page](./datapacks/temperature_effect_definition.md).
 
 Applies Mining Fatigue to cold players
 
-```json title="data/example/thermoo/temperature_effect/status_effect.json"
+```json title="data/example/thermoo/temperature_effect/mob_effect.json"
 {
-    "type": "thermoo:status_effect",
+    "type": "thermoo:mob_effect",
     "entity_type": "minecraft:player",
     "temperature_scale_range": {
         "max": -0.5
@@ -426,10 +429,10 @@ for them.
 
 === "Mods (Java)"
     ```java
-    void foo(World world, BlockPos pos) {
+    void foo(Level level, BlockPos pos) {
         EnvironmentLookup lookup = EnvironmentLookup.getInstance();
     
-        ComponentMap components = look.findEnvironmentComponents(world, pos);
+        ComponentMap components = look.findEnvironmentComponents(level, pos);
     
         TemperatureRecord temperature = components.getOrDefault(
                 EnvironmentComponentTypes.TEMPERATURE,
@@ -440,10 +443,10 @@ for them.
     ```
 === "Mods (Kotlin)"
     ```kotlin
-    fun foo(world: World, pos: BlockPos) {
+    fun foo(level: Level, pos: BlockPos) {
         val lookup: EnvironmentLookup = EnvironmentLookup.getInstance()
     
-        val components: ComponentMap = look.findEnvironmentComponents(world, pos)
+        val components: ComponentMap = look.findEnvironmentComponents(level, pos)
     
         val temperature: TemperatureRecord = components.getOrDefault(
             EnvironmentComponentTypes.TEMPERATURE,
