@@ -8,6 +8,7 @@ Thermoo corresponds to a Minecraft version with breaking changes.
 
 | Minecraft Version Range | Corresponding Thermoo versions |
 | ----------------------- | ------------------------------ |
+| 1.21.11                 | 9.x                            |
 | 1.21.9-10               | 8.x                            |
 | 1.21.6-8                | 7.x                            |
 | 1.21.5                  | 6.x                            |

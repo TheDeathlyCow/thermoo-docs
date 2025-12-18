@@ -1,6 +1,5 @@
 ---
 title: ☁️ Environment Provider Definition
-status: new
 ---
 # Environment Provider Definition
 
