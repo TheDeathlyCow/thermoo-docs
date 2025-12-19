@@ -47,6 +47,7 @@ nav:
       - command.md
       - entity_attributes.md
   - "Datapack Utilities":
+      - datapacks/environment_attributes.md
       - datapacks/environment_component_type.md
       - datapacks/environment_definition.md
       - datapacks/environment_provider_definition.md

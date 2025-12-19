@@ -1,6 +1,5 @@
 ---
 title: 🌎 Environment Definition
-status: new
 ---
 # Environment Definition
 
