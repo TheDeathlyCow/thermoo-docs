@@ -71,11 +71,6 @@ Add the following to your gradle build script:
 
 ## Datapacks
 
-You must first install either the [Fabric](https://fabricmc.net/) or [Quilt](https://quiltmc.org/) mod loaders to use
-Thermoo. Thermoo may run on the NeoForge platform when using Sinytra Connector, however this usage is not supported.
-Support queries and issues from users not using Fabric or Quilt will be closed/ignored.
+You must first install either the [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org/), or [Neoforge](https://neoforged.net/) (1.21.1 only!) mod loaders to use Thermoo.
 
-Ensure Thermoo is installed in your `mods` directory, along with its
-dependencies [Fabric API](https://github.com/FabricMC/fabric) (
-or [QSL](https://github.com/QuiltMC/quilt-standard-libraries/) if using Quilt)
-and [Cardinal Components API](https://github.com/Ladysnake/Cardinal-Components-API).
+Ensure Thermoo is installed in your `mods` directory, along with its dependencies. Thermoo requires [Fabric API](https://github.com/FabricMC/fabric). If you are using Quilt or Neoforge, you should use either [QSL](https://github.com/QuiltMC/quilt-standard-libraries/), or [Forgified Fabric API](https://github.com/Sinytra/ForgifiedFabricAPI) respectively instead. On Fabric and Quilt, [Cardinal Components API](https://github.com/Ladysnake/Cardinal-Components-API) is also required (not necessary on Neoforge).

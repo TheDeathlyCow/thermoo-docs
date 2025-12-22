@@ -3,7 +3,7 @@ title: "🏠 Homepage"
 ---
 # Thermoo
 
-Welcome to the Thermoo Developer wiki! Thermoo is a temperature and environment library mod for Minecraft, targeting the Fabric and Quilt ecosystems. It is meant to help provide compatibility between mods and datapacks that use temperature as a core mechanic, such as Frostiful or Scorchful. Using this mod on its own will have no gameplay or visual effects. It is designed to be used by Mods written in both Java and Kotlin, as well as Datapacks through Commands and other registries.
+Welcome to the Thermoo Developer wiki! Thermoo is a temperature and environment library mod for Minecraft. It is meant to help provide compatibility between mods and datapacks that use temperature as a core mechanic, such as Frostiful or Scorchful. Using this mod on its own will have no gameplay or visual effects. It is designed to be used by Mods written in both Java and Kotlin, as well as Datapacks through Commands and other registries.
 
 Normally, Thermoo is required on both client and server. However, Thermoo may be made compatible with vanilla clients on dedicated servers with [Polymer](https://modrinth.com/mod/polymer) installed. So if you want to use Thermoo to make fully server sided custom datapacks, then make sure to install Polymer!
 
@@ -41,10 +41,6 @@ For Modders, there is also extensive Javadoc provided for all of Thermoo's publi
 - [Environment Controller API](./mods/environment_controller.md)
 - [Item Attribute Modifier Definition](./datapacks/item_attribute_modifier_definition.md)
 
-!!! warning
-
-    Thermoo is made for the Fabric mod loader, and also supports the Quilt mod loader. It may run on NeoForge using Sinytra Connector, however this usage is not supported. Support queries and issues from users not using Fabric or Quilt will be closed/ignored.
-
 ## Examples
 
 The best example of how to use Thermoo is provided by the mods [Frostiful](https://github.com/TheDeathlyCow/frostiful/) and [Scorchful](https://github.com/TheDeathlyCow/scorchful/), as they are made by me! They include examples on how to apply temperature, how to listen to temperature-related events, how to use the datapack integrations, and how to display temperature to the player. However, if you have any questions feel free to ask on my [Discord](https://discord.gg/aqASuWebRU)
@@ -57,20 +53,23 @@ Supported versions will receive all new features, fixes, and updates (where poss
 
 Unsupported versions version will receive no future updates, except for critical security fixes.
 
-| Minecraft Version | Support Status                |
-| ----------------- | ----------------------------- |
-| 1.21.11           | :white_check_mark: Supported  |
-| 1.21.9-10         | :x: Unsupported               |
-| 1.21.6-8          | :x: Unsupported               |
-| 1.21.5            | :x: Unsupported               |
-| 1.21.2-4          | :x: Unsupported               |
-| 1.21.1            | :white_check_mark: Supported  |
-| 1.20.5-6          | :x: Skipped                   |
-| 1.20.3-4          | :x: Unsupported               |
-| 1.20.2            | :x: Unsupported               |
-| 1.20-1.20.1       | :x: Unsupported               |
-| 1.19.4            | :x: Unsupported               |
-| 1.19.2            | :x: Unsupported               |
+| Minecraft Version | Support Status                                   |
+| ----------------- | ------------------------------------------------ |
+| 1.21.11           | :white_check_mark: Supported                     |
+| 1.21.9-10         | :x: Unsupported                                  |
+| 1.21.6-8          | :x: Unsupported                                  |
+| 1.21.5            | :x: Unsupported                                  |
+| 1.21.2-4          | :x: Unsupported                                  |
+| 1.21.1            | :white_check_mark: Supported (includes Neoforge) |
+| 1.20.5-6          | :x: Skipped                                      |
+| 1.20.3-4          | :x: Unsupported                                  |
+| 1.20.2            | :x: Unsupported                                  |
+| 1.20-1.20.1       | :x: Unsupported                                  |
+| 1.19.4            | :x: Unsupported                                  |
+| 1.19.2            | :x: Unsupported                                  |
+
+!!! warning
+    Thermoo is primarily a Fabric library, but also fully supports Quilt and has limited support for Neoforge. Neoforge support is contingent on the availability of Forgified Fabric API, which is currently only available for 1.21.1 as of December 2025. LexForge is not supported.
 
 ## Requires Thermoo Badge
 
