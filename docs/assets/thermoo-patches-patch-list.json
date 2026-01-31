@@ -23,6 +23,14 @@
                 "sereneseasons",
                 "friendsandfoes"
             ]
+        },
+        {
+            "minecraft_version": ">=1.21.11 <1.21.12",
+            "mods": [
+                "overflowingbars",
+                "sereneseasons",
+                "friendsandfoes"
+            ]
         }
     ]
 }
