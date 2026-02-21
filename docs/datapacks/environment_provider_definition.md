@@ -30,6 +30,8 @@ Environment Provider Types:
     - [Weather State](#weather-state)
     - [Precipitation Type](#precipitation-type)
     - [Temperature Shift](#temperature-shift)
+    - [Set Temperature From Pressure](#set-temperature-from-pressure)
+    - [Set Pressure from Altitude](#set-pressure-from-altitude)
     - [Modify](#modify)
   - [Examples](#examples)
   - [Custom Environment Provider Types](#custom-environment-provider-types)
@@ -128,6 +130,22 @@ If there is not an instance of the `thermoo:temperature` component in the curren
 
 - `{}`: The root tag.
     - `D` `{}` **shift**: A [temperature record](../mods/temperature_unit.md#temperature-record-data-format) that is added to the current instance of the `thermoo:temperature` component in the evaluation tree. It is recommended to use the absolute units (Kelvin or Rankine) for this record, but not mandatory.
+
+### Set Temperature From Pressure
+
+An environment provider that applies the [Ideal Gas Law](https://en.wikipedia.org/wiki/Ideal_gas_law) to
+set the current temperature based on atmospheric pressure, using an assumed baseline pressure. If no baseline
+pressure is provided, then it will use [the environment attributes](./environment_attributes.md#atmospheric-pressure) to get a baseline.
+
+- `{}`: The root tag.
+  - `D` **base_pressure**: An optional non-negative double that stores the base pressure of the provider in millibars.
+
+### Set Pressure from Altitude
+
+An environment provider that sets the pressure component based on altitude above or below the dimension's sea level.
+
+- `{}`: The root tag.
+  - `D` **pressure_change_mbar_per_block**: An optional double that stores adjusts the pressure linearly based on altitude. Defaults to `-0.12 mbar/block`.
 
 ### Modify
 

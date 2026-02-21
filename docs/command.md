@@ -35,6 +35,9 @@ Arguments:
 ### Environment Humidity
 
 ```mcfunction
+thermoo environment relative_humidity <location> [<scale>]
+
+# alternative deprecated usage
 thermoo environment relativehumidity <location> [<scale>]
 ```
 
@@ -46,6 +49,19 @@ Arguments:
     - For example: A scale of `10.0` and a relative humidity of `54.3%` would have the command result of `5` that can be stored in any of the normal targets of `execute store result`.
 
 <br/>
+
+## Environment Atmospheric Pressure
+
+```mcfunction
+thermoo environment atmospheric_pressure <location> [<scale>]
+```
+
+Returns the atmospheric of the location in millibars, as determined by the local [environment conditions](./datapacks/environment_definition.md).
+
+Arguments:
+- `location`: A block position.
+- `scale`: An optional float. Multiplies the final atmospheric pressure value so that commands can read it with varying precision. Defaults to `1.0`.
+    - For example: A scale of `100.0` and a atmospheric pressure of `1013.25` would have the command result of `101325` that can be stored in any of the normal targets of `execute store result`.
 
 ## Temperature
 ### Get Temperature

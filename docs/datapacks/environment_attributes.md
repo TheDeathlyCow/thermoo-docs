@@ -18,6 +18,7 @@ Thermoo provides several new environment attributes. These are as follows:
   - [Temperate Season Progress](#temperate-season-progress)
   - [Tropical Season Progress](#tropical-season-progress)
   - [Temperature](#temperature)
+  - [Atmospheric Pressure](#atmospheric-pressure)
 
 ## Temperate Season
 
@@ -48,3 +49,13 @@ An interpolated float value that indicates the progression of the current tropic
 Identifier: `thermoo:gameplay/temperature`
 
 A [temperature record](../mods/temperature_unit.md) that defines the current temperature at a given position. This value can be interpolated, and modified with the operations `add`, `subtract`, `minimum`, and `maximum`. Interpolated temperatures will work for any combination of units, but will return in the unit of the *first* temperature record. Defaults to a value of `20°C`. 
+
+This environment attribute is used as the default value for temperature in the [Environment API](./environment_attributes.md). 
+
+## Atmospheric Pressure
+
+Identifier: `thermoo:gameplay/atmospheric_pressure`
+
+A non-negative double that defines the current atmospheric pressure at a given position in millibars. This value can be interpolated, and modified with the operations `alpha_blend`, `add`, `subtract`, `multiply`, `minimum`, and `maximum`. Defaults to a value of `1013.25 mbar` (1 standard atmosphere).
+
+This environment attribute is used as the default value for atmospheric pressure in the [Environment API](./environment_attributes.md). 

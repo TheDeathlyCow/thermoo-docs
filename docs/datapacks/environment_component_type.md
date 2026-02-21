@@ -9,6 +9,7 @@ Environment Component Types are a special set of [Components](https://minecraft.
 
 - [`thermoo:temperature`](#temperature)
 - [`thermoo:relative_humidity`](#relative-humidity)
+- [`thermoo:atmospheric_pressure`](#atmospheric-pressure)
 
 ### Temperature
 - `{}` **components**: Parent tag.
@@ -18,9 +19,14 @@ Environment Component Types are a special set of [Components](https://minecraft.
 - `{}` **components**: Parent tag.
     - `D` **thermoo:relative_humidity**: A double value between 0 and 1 (inclusive).
 
+### Atmospheric Pressure
+- `{}` **components**: Parent tag.
+  - `D` **thermoo:atmospheric_pressure**: A non-negative double value that stores the atmospheric pressure in millibars.
+
+
 ## Defining Custom Component Types
 
-Creating a new environment component type is just like creating a new item component type, except that you must register it to the registry `ThermooRegistries.ENVIRONMENT_COMPONENT_TYPE`. All component type objects should be immutable, and any operations on them should return a new instance. For this reason, it is recommended to use `record` (in Java) or `data` (in Kotlin) classes to create your components.
+Creating a new environment component type is just like creating a new item component type, except that you must register it to the registry `ThermooRegistries.ENVIRONMENT_COMPONENT_TYPE`. All component type objects should be immutable, and any operations on them should return a new instance. For this reason, it is recommended to use either primitive types, or `record` (in Java) or `data` (in Kotlin) classes to create your components.
 
 You will need to register a `Codec` for your component type. The Fabric docs have a useful page on the subject if you are unfamiliar: https://docs.fabricmc.net/develop/codecs 
 
