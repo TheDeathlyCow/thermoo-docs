@@ -116,6 +116,15 @@ The `mode` specified how and when thermal resistances should be applied. By defa
 
 Result: The sum of the amounts successfully added or removed before resistance is applied. If removing, the result will be negative.
 
+## Effect Set Enabled
+
+```mcfunction
+thermoo temperature effect set_enabled <targets> <effect_id> (true|false)
+```
+
+Dynamically enable (`true`) or disable (`false`) a temperature effect for the specified `targets`.
+
+Result: The number of entities successfully affected by the command. Fails when no entity is affected by the command.
 
 ## Soaking
 
