@@ -19,6 +19,7 @@ thermoo environment temperature <location> [<unit>] [<scale>]
 Returns the temperature of the location in some unit, as determined by the local [environment conditions](./datapacks/environment_definition.md).
 
 Arguments:
+
 - `location`: A block position.
 - `unit`: An optional string, either `celsius`, `fahrenheit`, `kelvin`, or `rankine`. Determines what [unit](./mods/temperature_unit.md) to display the temperature in. Defaults to `celsius`.
 - `scale`: An optional float. Multiplies the final temperature value so that commands can read the decimal point, if desired. Defaults to `1.0`.
@@ -30,6 +31,7 @@ thermoo environment temperature <target>
 Returns the environment temperature point change of the player's current position as calculated by mod event listeners.
 
 Arguments:
+
 - `target`: A single player target.
 
 ### Environment Humidity
@@ -44,13 +46,14 @@ thermoo environment relativehumidity <location> [<scale>]
 Returns the relative humidity of the location in some unit, as determined by the local [environment conditions](./datapacks/environment_definition.md).
 
 Arguments:
+
 - `location`: A block position.
 - `scale`: An optional float. Multiplies the final relative humidity value so that commands can read it (the internal humidity value is stored as a 0-1 percentage). Defaults to `100.0`.
     - For example: A scale of `10.0` and a relative humidity of `54.3%` would have the command result of `5` that can be stored in any of the normal targets of `execute store result`.
 
 <br/>
 
-## Environment Atmospheric Pressure
+### Environment Atmospheric Pressure
 
 ```mcfunction
 thermoo environment atmospheric_pressure <location> [<scale>]
@@ -59,6 +62,7 @@ thermoo environment atmospheric_pressure <location> [<scale>]
 Returns the atmospheric of the location in millibars, as determined by the local [environment conditions](./datapacks/environment_definition.md).
 
 Arguments:
+
 - `location`: A block position.
 - `scale`: An optional float. Multiplies the final atmospheric pressure value so that commands can read it with varying precision. Defaults to `1.0`.
     - For example: A scale of `100.0` and a atmospheric pressure of `1013.25` would have the command result of `101325` that can be stored in any of the normal targets of `execute store result`.
@@ -126,6 +130,7 @@ thermoo soaking get <target> [<mode>]
 Gets the current, min, or max wet ticks value of the target.
 
 Arguments:
+
 - `target`: A single entity target.
 - `mode`: Optional enum, must be one of `current`, `min`, `max`, `scale`. Defaults to `current`.
     - `current`: Returns the current wet tick value of the target.
@@ -139,6 +144,7 @@ thermoo soaking get <target> scale [<scale>]
 ```
 
 Arguments:
+
 - `scale`: An optional float. Multiplies the final temperature value so that commands can read the decimal point, if desired. Defaults to `100.0`.
     - For example: a scale of `100.0` and a soaking scale of `31.3%` would have the command return a result of `31` that can be stored in any of the normal targets of `execute store result`.
 
@@ -151,6 +157,7 @@ thermoo soaking set <target> <value>
 Sets the target's wet ticks to the specified value.
 
 Arguments:
+
 - `target`: A single entity target.
 - `value`: The integer value to set the target's wet ticks to.
 
@@ -163,5 +170,6 @@ thermoo soaking (add|remove) <target> <value>
 Adds or removes the specified `value` of wet ticks to the `target`'s current wet ticks, clamped between their min and max wet ticks.
 
 Arguments:
+
 - `target`: A single entity target.
 - `value`: Integer, amount of wet ticks to add or remove. Cannot be negative.

@@ -21,7 +21,7 @@ Environment Component Types are a special set of [Components](https://minecraft.
 
 ### Atmospheric Pressure
 - `{}` **components**: Parent tag.
-  - `D` **thermoo:atmospheric_pressure**: A non-negative double value that stores the atmospheric pressure in millibars.
+    - `D` **thermoo:atmospheric_pressure**: A non-negative double value that stores the atmospheric pressure in millibars.
 
 
 ## Defining Custom Component Types

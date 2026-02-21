@@ -138,14 +138,14 @@ set the current temperature based on atmospheric pressure, using an assumed base
 pressure is provided, then it will use [the environment attributes](./environment_attributes.md#atmospheric-pressure) to get a baseline.
 
 - `{}`: The root tag.
-  - `D` **base_pressure**: An optional non-negative double that stores the base pressure of the provider in millibars.
+    - `D` **base_pressure**: An optional non-negative double that stores the base pressure of the provider in millibars.
 
 ### Set Pressure from Altitude
 
 An environment provider that sets the pressure component based on altitude above or below the dimension's sea level.
 
 - `{}`: The root tag.
-  - `D` **pressure_change_mbar_per_block**: An optional double that stores adjusts the pressure linearly based on altitude. Defaults to `-0.12 mbar/block`.
+    - `D` **pressure_change_mbar_per_block**: An optional double that stores adjusts the pressure linearly based on altitude. Defaults to `-0.12 mbar/block`.
 
 ### Modify
 
