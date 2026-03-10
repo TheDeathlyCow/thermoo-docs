@@ -8,6 +8,7 @@ Thermoo corresponds to a Minecraft version with breaking changes.
 
 | Minecraft Version Range | Corresponding Thermoo versions |
 | ----------------------- | ------------------------------ |
+| 26.1.x                  | 10.x (planned)                 |
 | 1.21.11                 | 9.x                            |
 | 1.21.9-10               | 8.x                            |
 | 1.21.6-8                | 7.x                            |
@@ -22,9 +23,9 @@ Thermoo corresponds to a Minecraft version with breaking changes.
 
 [![](https://jitpack.io/v/TheDeathlyCow/thermoo.svg)](https://jitpack.io/#TheDeathlyCow/thermoo)
 
-## Mods
+## Mods (Loom)
 
-Add the following to your gradle build script:
+If using a Loom-based environment (Fabric or Architectury), add the following to your Gradle build script:
 
 === "`build.gradle`"
     ```groovy
@@ -67,7 +68,49 @@ Add the following to your gradle build script:
     ```
 
 !!! warning
-    You may embed Thermoo in your mod through the `include` directive or other jar-in-jar mechanisms, provided that you follow the conditions of Thermoo's [LGPL-3.0](https://github.com/TheDeathlyCow/thermoo/blob/HEAD/LICENSE) license. This includes, but is not limited to: making your mod open source, and providing the same license in your mod (or [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)). See the full license text for all terms.
+    You may embed Thermoo in your mod through the `include` directive or other jar-in-jar mechanisms, just be aware that Thermoo is distributed under a copyleft license ([LGPL-3.0](https://github.com/TheDeathlyCow/thermoo/blob/HEAD/LICENSE)).
+
+## Mods (ModDevGradle)
+
+If using a ModDevGradle environment on Neoforge, add the following to your Gradle build script:
+
+=== "`build.gradle`"
+    ```groovy
+    repositories {
+        maven {
+            url "https://jitpack.io/"
+        }
+    }
+    
+    dependencies {
+        // Your other dependencies
+        // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
+        // note all Neoforge versions are suffixed with `-neoforge`.
+        implementation "com.github.thedeathlycow:thermoo:<VERSION>"
+    }
+    ```
+
+=== "`build.gradle.kts`"
+    ```kotlin
+    repositories {
+        maven {
+            url = uri("https://jitpack.io/")
+        }
+    }
+    
+    dependencies {
+        // Your other dependencies
+        // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
+        // note all Neoforge versions are suffixed with `-neoforge`.
+        modImplementation("com.github.thedeathlycow:thermoo:<VERSION>")
+    }
+    ```
+
+!!! warning
+    You may embed Thermoo in your mod through the `include` directive or other jar-in-jar mechanisms, just be aware that Thermoo is distributed under a copyleft license ([LGPL-3.0](https://github.com/TheDeathlyCow/thermoo/blob/HEAD/LICENSE)).
+
+!!! warning
+    Jitpack does not seem to correctly publish Thermoo's interface injection data. If you want to use interface injections, you will need to manually include Thermoo's interface injections in your own project. You can find this data [here](https://github.com/TheDeathlyCow/thermoo/blob/1.21.1-neoforge/src/main/resources/interfaces.json) for 1.21.1. See [this article](https://docs.neoforged.net/toolchain/docs/plugins/mdg/#interface-injection) for instructions on interface injection in ModDevGradle. This will be fixed at a future date when I migrate Thermoo off of Jitpack.
 
 ## Datapacks
 
