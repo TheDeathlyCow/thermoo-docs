@@ -1,4 +1,4 @@
-site_name: Thermoo Wiki
+site_name: Thermoo Docs
 
 repo_url: https://github.com/TheDeathlyCow/thermoo
 repo_name: TheDeathlyCow/thermoo
@@ -23,6 +23,14 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+
+copyright: >
+  NOT AN OFFICIAL MINECRAFT WEBSITE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.
+  <br/>
+  © 2026 - TheDeathlyCow. 
+  <br/>
+  All content on this website is licensed under <a href="https://github.com/TheDeathlyCow/thermoo-docs/blob/main/LICENSE"> CC-BY-NC-SA 4.0</a> unless otherwise noted.
+
 
 extra_css:
   - assets/styles.css

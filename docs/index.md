@@ -77,6 +77,6 @@ Feel free to add this to your mod page if you use Thermoo: `https://i.imgur.com/
 
 ![Requires Thermoo Badge](https://i.imgur.com/MjlOmH0.png)
 
-## Wiki Source
+## Docs Source
 
 The source code for this wiki may be found at [https://github.com/theDeathlyCow/thermoo-docs](https://github.com/theDeathlyCow/thermoo-docs), contributions are welcome!
