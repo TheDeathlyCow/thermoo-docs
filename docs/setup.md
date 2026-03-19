@@ -93,6 +93,6 @@ Ensure Thermoo is installed in your `mods` directory, along with its dependencie
 
 ## Javadoc
 
-Thermoo's Javadoc is hosted on Jitpack: https://jitpack.io/com/github/thedeathlycow/thermoo/latest/javadoc/
+Thermoo's Javadoc is hosted on Jitpack [here](https://jitpack.io/com/github/thedeathlycow/thermoo/latest/javadoc/).
 
 If you need Javadoc for a specific version, replace the `<version>` in this link with the version you need: `https://jitpack.io/com/github/thedeathlycow/thermoo/<version>/javadoc/`
