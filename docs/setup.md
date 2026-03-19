@@ -23,9 +23,9 @@ Thermoo corresponds to a Minecraft version with breaking changes.
 
 [![](https://jitpack.io/v/TheDeathlyCow/thermoo.svg)](https://jitpack.io/#TheDeathlyCow/thermoo)
 
-## Mods (Loom)
+## Mods
 
-If using a Loom-based environment (Fabric or Architectury), add the following to your Gradle build script:
+If using a modded environment, you can Thermoo via [Jitpack](https://jitpack.io). Thermoo does not ship a common module for multiloader projects. In such cases, I would recommend using the base Fabric module as it is closest to vanilla.
 
 === "`build.gradle`"
     ```groovy
@@ -33,7 +33,7 @@ If using a Loom-based environment (Fabric or Architectury), add the following to
         maven {
             url "https://jitpack.io/"
         }
-    // Needed as Thermoo uses Cardinal Components
+        // Needed on Fabric as Thermoo uses Cardinal Components
         maven {
             name = "Ladysnake Mods"
             url = "https://maven.ladysnake.org/releases"
@@ -43,7 +43,13 @@ If using a Loom-based environment (Fabric or Architectury), add the following to
     dependencies {
         // Your other dependencies
         // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
-        modImplementation "com.github.thedeathlycow:thermoo:<VERSION>"
+        // Neoforge versions are always suffixed with `-neoforge`
+        
+        implementation "com.github.thedeathlycow:thermoo:<VERSION>"
+
+        // If using Fabric or some other Loom-based environment on an obfuscated 
+        // version (1.21.11 and below) use this to remap:
+        //modImplementation "com.github.thedeathlycow:thermoo:<VERSION>"
     }
     ```
 
@@ -63,46 +69,13 @@ If using a Loom-based environment (Fabric or Architectury), add the following to
     dependencies {
         // Your other dependencies
         // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
-        modImplementation("com.github.thedeathlycow:thermoo:<VERSION>")
-    }
-    ```
+        // Neoforge versions are always suffixed with `-neoforge`
 
-!!! warning
-    You may embed Thermoo in your mod through the `include` directive or other jar-in-jar mechanisms, just be aware that Thermoo is distributed under a copyleft license ([LGPL-3.0](https://github.com/TheDeathlyCow/thermoo/blob/HEAD/LICENSE)).
+        implementation("com.github.thedeathlycow:thermoo:<VERSION>")
 
-## Mods (ModDevGradle)
-
-If using a ModDevGradle environment on Neoforge, add the following to your Gradle build script:
-
-=== "`build.gradle`"
-    ```groovy
-    repositories {
-        maven {
-            url "https://jitpack.io/"
-        }
-    }
-    
-    dependencies {
-        // Your other dependencies
-        // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
-        // note all Neoforge versions are suffixed with `-neoforge`.
-        implementation "com.github.thedeathlycow:thermoo:<VERSION>"
-    }
-    ```
-
-=== "`build.gradle.kts`"
-    ```kotlin
-    repositories {
-        maven {
-            url = uri("https://jitpack.io/")
-        }
-    }
-    
-    dependencies {
-        // Your other dependencies
-        // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
-        // note all Neoforge versions are suffixed with `-neoforge`.
-        modImplementation("com.github.thedeathlycow:thermoo:<VERSION>")
+        // If using Fabric or some other Loom-based environment on an obfuscated 
+        // version (1.21.11 and below) use this to remap:
+        //modImplementation("com.github.thedeathlycow:thermoo:<VERSION>")
     }
     ```
 
@@ -110,10 +83,16 @@ If using a ModDevGradle environment on Neoforge, add the following to your Gradl
     You may embed Thermoo in your mod through the `include` directive or other jar-in-jar mechanisms, just be aware that Thermoo is distributed under a copyleft license ([LGPL-3.0](https://github.com/TheDeathlyCow/thermoo/blob/HEAD/LICENSE)).
 
 !!! warning
-    Jitpack does not seem to correctly publish Thermoo's interface injection data. If you want to use interface injections, you will need to manually include Thermoo's interface injections in your own project. You can find this data [here](https://github.com/TheDeathlyCow/thermoo/blob/1.21.1-neoforge/src/main/resources/interfaces.json) for 1.21.1. See [this article](https://docs.neoforged.net/toolchain/docs/plugins/mdg/#interface-injection) for instructions on interface injection in ModDevGradle. This will be fixed at a future date when I migrate Thermoo off of Jitpack.
+    Jitpack does not seem to correctly publish Thermoo's interface injection data for Neoforge/ModDevGradle builds. If you want to use interface injections, you will need to manually include Thermoo's interface injections in your own project. You can find this data [here](https://github.com/TheDeathlyCow/thermoo/blob/1.21.1-neoforge/src/main/resources/interfaces.json) for 1.21.1. See [this article](https://docs.neoforged.net/toolchain/docs/plugins/mdg/#interface-injection) for instructions on interface injection in ModDevGradle. This will be fixed at a future date when I migrate Thermoo off of Jitpack.
 
 ## Datapacks
 
 You must first install either the [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org/), or [Neoforge](https://neoforged.net/) (1.21.1 only!) mod loaders to use Thermoo.
 
 Ensure Thermoo is installed in your `mods` directory, along with its dependencies. Thermoo requires [Fabric API](https://github.com/FabricMC/fabric). If you are using Quilt or Neoforge, you should use either [QSL](https://github.com/QuiltMC/quilt-standard-libraries/), or [Forgified Fabric API](https://github.com/Sinytra/ForgifiedFabricAPI) respectively instead. On Fabric and Quilt, [Cardinal Components API](https://github.com/Ladysnake/Cardinal-Components-API) is also required (not necessary on Neoforge).
+
+## Javadoc
+
+Thermoo's Javadoc is hosted on Jitpack: https://jitpack.io/com/github/thedeathlycow/thermoo/latest/javadoc/
+
+If you need Javadoc for a specific version, replace the `<version>` in this link with the version you need: `https://jitpack.io/com/github/thedeathlycow/thermoo/<version>/javadoc/`
