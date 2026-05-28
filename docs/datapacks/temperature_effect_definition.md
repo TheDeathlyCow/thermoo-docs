@@ -1,7 +1,11 @@
 ---
 title: 🥶 Temperature Effect Definition
+status: deprecated
 ---
 # Temperature Effect Definition
+
+!!! warning
+    This API is deprecated as of Minecraft 26.1. Temperature effects have been fully replaced by [Temperature Statuses](./temperature_status_definition.md).
 
 Temperature effects are a data-driven way of adding effects to temperature under certain conditions. Some examples include damage, status effects, and attribute modifiers. They are used by both mods and datapacks. For mods, you should place your files in `src/main/resources/data/[modid]/thermoo/temperature_effect` and for datapacks, they should instead be placed in `[world]/datapacks/your_datapack/data/[namespace]/thermoo/temperature_effect`.
 

@@ -61,7 +61,7 @@ nav:
       - datapacks/environment_provider_definition.md
       - datapacks/loot_condition.md
       - datapacks/tags.md
-      - datapacks/temperature_effect_definition.md
+      - datapacks/temperature_status_definition.md
   - "Mod Utility APIs":
       - mods/item_attribute.md
       - mods/seasons.md
@@ -72,3 +72,4 @@ nav:
       - mods/armor_materials.md
       - mods/environment_controller.md
       - datapacks/item_attribute_modifier_definition.md
+      - datapacks/temperature_effect_definition.md
