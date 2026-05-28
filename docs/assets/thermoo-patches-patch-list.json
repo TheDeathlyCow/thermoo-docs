@@ -31,6 +31,16 @@
                 "sereneseasons",
                 "friendsandfoes"
             ]
+        },
+        {
+            "minecraft_version": "~26.1-",
+            "mods": [
+                "overflowingbars",
+                "sereneseasons",
+                "friendsandfoes",
+                "nycto",
+                "homeostaticseasons"
+            ]
         }
     ]
 }
