@@ -42,7 +42,7 @@ Applies [attribute modifiers](https://minecraft.wiki/w/Attribute) to the target 
 Applies damage to the target entities.
 
 * `{}`: The root tag.
-    - `"` **type**: Set of `thermoo:damage`.
+    - `"` **type**: Set to `thermoo:damage`.
     - `F` **amount**: Non-negative float, the amount of damage to apply on each pulse.
     - `"` **damage_type**: Identifier of the damage type to apply to the entity. For example, `minecraft:freeze`.
 
@@ -52,7 +52,7 @@ Applies damage to the target entities.
 Runs a datapack function.
 
 * `{}`: The root tag.
-    - `"` **type**: Set of `thermoo:function`.
+    - `"` **type**: Set to `thermoo:function`.
     - `"` **function**: The ID of the function to execute.
     - `"` **arguments**: An SNBT string containing the function's macro arguments. Must be supplied if and only if the specified `"` **function** is a macro function.
     - `{}` **remove_function**: The function to apply when the status is removed.

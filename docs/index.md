@@ -47,20 +47,20 @@ The best example of how to use Thermoo is provided by the mods [Frostiful](https
 
 ## LTS Policy
 
-This is my current intended support status for each version of Minecraft that Thermoo is available for. The current Long-Term Support (LTS) policy for Thermoo versions is to fully support only the latest game drop, with limited support for recent major versions.
+Thermoo is a library that I have maintained for many years at this point across many different Minecraft versions. While I would love to support this library as widely as possible, my time is limited. Therefore, I publish this Long-Term Support (LTS) policy to inform users of what versions and loaders I intend to maintain and support. This page is updated regularly, be sure to check back often (especially when asking for support in [my Discord](https://discord.thedeathlycow.com)).
+
+This is my current intended support status for each version of Minecraft that Thermoo is available for. The current LTS policy for Thermoo versions is to fully support the first game drop of the current year. If a patch for that game drop breaks compatibility with Thermoo somehow, then I will only support the latest patch.
 
 Supported versions will receive all new features, fixes, and updates.
 
 Version 1.21.1 will receive limited fixes only support (for things such as minor changes and bug fixes), but no new major features.
 
-Snapshot versions will only receive sporatic updates, and the API may not be considered stable between releases.
-
 Unsupported versions version will receive no future updates, except for critical security fixes.
 
 | Minecraft Version | Support Status                           |
 | ----------------- | ---------------------------------------- |
-| 26.1.x            | :warning: In development, still unstable |
-| 1.21.11           | :white_check_mark: Supported             |
+| 26.1.x            | :white_check_mark: Supported             |
+| 1.21.11           | :x: Unsupported                          |
 | 1.21.2-10         | :x: Unsupported                          |
 | 1.21.1            | :warning: Fixes only (includes Neoforge) |
 | 1.20.5-6          | :x: Skipped                              |
