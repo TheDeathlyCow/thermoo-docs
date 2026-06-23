@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "minecraft_versions": [
+                "26.1",
+                "26.1.1",
+                "26.1.2"
+            ],
+            "loader": "fabric",
+            "mods": [
+                "overflowingbars",
+                "sereneseasons",
+                "friendsandfoes",
+                "nycto",
+                "homeostaticseasons"
+            ]
+        }
+    ]
+}
