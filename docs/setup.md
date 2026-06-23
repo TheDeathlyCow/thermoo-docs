@@ -31,25 +31,37 @@ If using a modded environment, you can Thermoo via [Jitpack](https://jitpack.io)
     ```groovy
     repositories {
         maven {
+            name "Jitpack"
             url "https://jitpack.io/"
         }
-        // Needed on Fabric as Thermoo uses Cardinal Components
+        // On Fabric, this is needed on Fabric as Thermoo uses Cardinal Components
         maven {
-            name = "Ladysnake Mods"
-            url = "https://maven.ladysnake.org/releases"
+            name "Ladysnake Mods"
+            url "https://maven.ladysnake.org/releases"
+        }
+        // This is also needed on Fabric for the Polymer compatibility patch
+        maven { 
+            name "Nucleoid"
+            url "https://maven.nucleoid.xyz" 
         }
     }
     
     dependencies {
         // Your other dependencies
-        // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
-        // Neoforge versions are always suffixed with `-neoforge`
+        // Get version by game version/loader from Jitpack:
+        // https://modrinth.com/mod/thermoo/versions
         
-        implementation "com.github.thedeathlycow:thermoo:<VERSION>"
+        // Thermoo 10.1+ has multiloader support, you must use the specific module 
+        // for your loader
+        compileOnly "com.github.TheDeathlyCow.thermoo:thermoo-common:v${project.thermoo_version}"
+        implementation "com.github.TheDeathlyCow.thermoo:thermoo-fabric:v${project.thermoo_version}"
+        // implementation "com.github.TheDeathlyCow.thermoo:thermoo-neoforge:v${project.thermoo_version}"
 
-        // If using Fabric or some other Loom-based environment on an obfuscated 
-        // version (1.21.11 and below) use this to remap:
-        //modImplementation "com.github.thedeathlycow:thermoo:<VERSION>"
+        // On an obfuscated version (1.21.11 and below), using Fabric or some other 
+        // Loom-based environment use this to remap:
+        //modImplementation "com.github.TheDeathlyCow:thermoo:v${project.thermoo_version}"
+        // On Neoforge 1.21.1 just use this:
+        //implementation "com.github.TheDeathlyCow:thermoo:v${project.thermoo_version}-neoforge"
     }
     ```
 
@@ -57,25 +69,37 @@ If using a modded environment, you can Thermoo via [Jitpack](https://jitpack.io)
     ```kotlin
     repositories {
         maven {
+            name = "Jitpack"
             url = uri("https://jitpack.io/")
         }
         // Needed as Thermoo uses Cardinal Components
         maven {
             name = "Ladysnake Mods"
-            url = "https://maven.ladysnake.org/releases"
+            url = uri("https://maven.ladysnake.org/releases")
+        }
+        // This is also needed on Fabric for the Polymer compatibility patch
+        maven { 
+            name = "Nucleoid"
+            url = uri("https://maven.nucleoid.xyz" )
         }
     }
     
     dependencies {
         // Your other dependencies
-        // get version from Jitpack: https://jitpack.io/#TheDeathlyCow/thermoo
-        // Neoforge versions are always suffixed with `-neoforge`
+        // Get version by game version/loader from Jitpack:
+        // https://modrinth.com/mod/thermoo/versions
+        
+        // Thermoo 10.1+ has multiloader support, you must use the specific module 
+        // for your loader
+        compileOnly("com.github.TheDeathlyCow.thermoo:thermoo-common:v${project.thermoo_version}")
+        implementation("com.github.TheDeathlyCow.thermoo:thermoo-fabric:v${project.thermoo_version}")
+        // implementation("com.github.TheDeathlyCow.thermoo:thermoo-neoforge:v${project.thermoo_version}")
 
-        implementation("com.github.thedeathlycow:thermoo:<VERSION>")
-
-        // If using Fabric or some other Loom-based environment on an obfuscated 
-        // version (1.21.11 and below) use this to remap:
-        //modImplementation("com.github.thedeathlycow:thermoo:<VERSION>")
+        // On an obfuscated version (1.21.11 and below), using Fabric or some other 
+        // Loom-based environment use this to remap:
+        //modImplementation("com.github.TheDeathlyCow:thermoo:v${project.thermoo_version}")
+        // On Neoforge 1.21.1 just use this:
+        //implementation("com.github.TheDeathlyCow:thermoo:v${project.thermoo_version}-neoforge")
     }
     ```
 
