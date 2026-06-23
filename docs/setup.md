@@ -111,9 +111,9 @@ If using a modded environment, you can Thermoo via [Jitpack](https://jitpack.io)
 
 ## Datapacks
 
-You must first install either the [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org/), or [Neoforge](https://neoforged.net/) (1.21.1 only!) mod loaders to use Thermoo.
+You must first install a mod loader such as [Fabric](https://fabricmc.net/), [Quilt](https://quiltmc.org/), or [Neoforge](https://neoforged.net/) to use Thermoo.
 
-Ensure Thermoo is installed in your `mods` directory, along with its dependencies. Thermoo requires [Fabric API](https://github.com/FabricMC/fabric). If you are using Quilt or Neoforge, you should use either [QSL](https://github.com/QuiltMC/quilt-standard-libraries/), or [Forgified Fabric API](https://github.com/Sinytra/ForgifiedFabricAPI) respectively instead. On Fabric and Quilt, [Cardinal Components API](https://github.com/Ladysnake/Cardinal-Components-API) is also required (not necessary on Neoforge).
+Ensure Thermoo is installed in your `mods` directory, along with its dependencies. Thermoo's dependencies are different depending on which loader and game version you choose, see the related projects section of the version you download on Curseforge or Modrinth.
 
 ## Javadoc
 

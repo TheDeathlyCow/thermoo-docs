@@ -49,7 +49,7 @@ The best example of how to use Thermoo is provided by the mods [Frostiful](https
 
 Thermoo is a library that I have maintained for many years at this point across many different Minecraft versions. While I would love to support this library as widely as possible, my time is limited. Therefore, I publish this Long-Term Support (LTS) policy to inform users of what versions and loaders I intend to maintain and support. This page is updated regularly, be sure to check back often (especially when asking for support in [my Discord](https://discord.thedeathlycow.com)).
 
-This is my current intended support status for each version of Minecraft that Thermoo is available for. The current LTS policy for Thermoo versions is to fully support the first game drop of the current year. If a patch for that game drop breaks compatibility with Thermoo somehow, then I will only support the latest patch.
+This is my current intended support status for each version of Minecraft that Thermoo is available for. The current LTS policy for Thermoo versions is to fully support the first game drop of the current year. If a patch for that game drop breaks compatibility with Thermoo somehow, then I will only support the latest patch. Later game drops in the year will be skipped.
 
 Supported versions will receive all new features, fixes, and updates.
 
@@ -57,18 +57,17 @@ Version 1.21.1 will receive limited fixes only support (for things such as minor
 
 Unsupported versions version will receive no future updates, except for critical security fixes.
 
-| Minecraft Version | Support Status                           |
-| ----------------- | ---------------------------------------- |
-| 26.1.x            | :white_check_mark: Supported             |
-| 1.21.11           | :x: Unsupported                          |
-| 1.21.2-10         | :x: Unsupported                          |
-| 1.21.1            | :warning: Fixes only (includes Neoforge) |
-| 1.20.5-6          | :x: Skipped                              |
-| 1.20-1.20.4       | :x: Unsupported                          |
-| 1.19.2, 1.19.4    | :x: Unsupported                          |
+| Minecraft Version | Support Status               |
+| ----------------- | ---------------------------- |
+| 26.1.x            | :white_check_mark: Supported |
+| 1.21.2-11         | :x: Unsupported              |
+| 1.21-1.21.1       | :warning: Fixes only         |
+| 1.20.5-6          | :x: Skipped                  |
+| 1.20-1.20.4       | :x: Unsupported              |
+| 1.19.2, 1.19.4    | :x: Unsupported              |
 
 !!! warning
-    Thermoo is primarily a Fabric library, but also fully supports Quilt and has limited support for Neoforge. Neoforge support is contingent on the availability of Forgified Fabric API, which is currently only available for 1.21.1 as of December 2025. LexForge is not supported.
+    Thermoo provides support for Neoforge on Minecraft 1.21.1 and 26.1+ only. Neoforge 1.21.1 support is only experimental, full support is only provided on 26.1+. Backports for Neoforge or LexForge onto other versions **will not be made.**
 
 ## Requires Thermoo Badge
 
